@@ -22,3 +22,8 @@ $("input[type='text']").keypress(function(keyPressed){
         $("ul").append(`<li><span><i class="fa fa-trash"></i></span> ${todoText}</li>`);
     }
 });
+
+// Add toggle
+$(".fa-plus").click(function(){
+    $("input[type='text']").fadeToggle(150);
+});
